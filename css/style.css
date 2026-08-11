@@ -7,6 +7,12 @@
 }
 
 .navbar {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: var(--dark-color);
     border-bottom: 1px solid var(--border-color);
     padding: 12px 0;
@@ -53,7 +59,16 @@
 ========================= */
 
 .hero-section {
-    background-image: url("../images/hero\ background.jpeg");
+    background:
+        linear-gradient(
+            to right,
+            rgba(2, 6, 23, 0.95) 0%,
+            rgba(2, 6, 23, 0.90) 20%,
+            rgba(2, 6, 23, 0.70) 30%,
+            rgba(2, 6, 23, 0.30) 37%,
+            transparent 40%
+        ),
+        url('../images/hero\ background.jpeg');
     position: relative;
 
     min-height: 650px;
@@ -80,10 +95,10 @@
 }
 
 .hero-small-text {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 
     font-size: 13px;
-    font-weight: 500;
+    font-weight: bolder;
 
     letter-spacing: 1.5px;
 
@@ -100,7 +115,7 @@
 
     vertical-align: middle;
 
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 
@@ -109,7 +124,7 @@
 ========================= */
 
 .hero-section h1 {
-    color: var(--text-color);
+    color: #F8FAFC;
 
     font-size: 58px;
     font-weight: 700;
@@ -124,7 +139,7 @@
 }
 
 .hero-section h2 {
-    color: #cbd5e1;
+    color: #E2E8F0;
 
     font-size: 25px;
     font-weight: 500;
@@ -133,14 +148,12 @@
 }
 
 
-/* =========================
-   HERO DESCRIPTION
-========================= */
+
 
 .hero-text {
     max-width: 550px;
 
-    color: #94a3b8;
+    color: #CBD5E1;
 
     font-size: 16px;
 
@@ -150,9 +163,7 @@
 }
 
 
-/* =========================
-   HERO BUTTONS
-========================= */
+
 
 .hero-buttons {
     display: flex;
@@ -181,8 +192,7 @@
 
     transform: translateY(-3px);
 
-    box-shadow:
-        0 10px 25px rgba(59, 130, 246, 0.25);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25);
 }
 
 .contact-btn {
@@ -205,10 +215,6 @@
     transform: translateY(-3px);
 }
 
-
-/* =========================
-   SOCIAL LINKS
-========================= */
 
 .social-links {
     display: flex;
@@ -233,10 +239,6 @@
 }
 
 
-/* =========================
-   BACKGROUND GLOW
-========================= */
-
 .hero-section::before {
     content: "";
 
@@ -260,9 +262,7 @@
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+
 
 @media (max-width: 991px) {
 
@@ -362,7 +362,7 @@
 }
 
 .about-section p {
-    color: #94a3b8;
+    color: var(--text-color);
     line-height: 1.8;
     font-size: 15px;
     max-width: 650px;
@@ -394,6 +394,12 @@
     border-radius: 12px;
     padding: 25px;
     margin-left: 20px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .info-item {
@@ -409,7 +415,7 @@
 }
 
 .info-item span {
-    color: #64748b;
+    color:silver;
     font-size: 14px;
 }
 
@@ -439,6 +445,12 @@
     border: 1px solid var(--border-color);
     border-radius: 12px;
     transition: 0.4s;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .service-card:hover {
@@ -527,6 +539,12 @@
 
 
 .experience-card {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     color: var(--text-color);
     position: relative;
     display: flex;
@@ -549,8 +567,7 @@
     transform: translateY(-6px);
     border-color: var(--primary-color);
 
-    box-shadow:
-        0 10px 35px rgba(0, 0, 0, 0.35),
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35),
         0 0 20px rgba(80, 100, 255, 0.08);
 }
 
@@ -859,6 +876,12 @@
     border-radius: 15px;
     overflow: hidden;
     transition: 0.3s;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .project-card:hover {
@@ -966,6 +989,12 @@
     border-radius: 12px;
 
     transition: 0.3s;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .edu-card:hover {
@@ -1012,6 +1041,12 @@
     border-radius: 12px;
 
     transition: 0.3s;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .certificate-card:hover {
@@ -1073,7 +1108,14 @@
 
     border: 1px solid var(--border-color);
     border-radius: 15px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 
 .contact-info h3 {
     color: var(--text-color);
@@ -1118,7 +1160,7 @@
 .contact-item span {
     display: block;
 
-    color: var(--muted-color);
+    color: silver;
     font-size: 12px;
     margin-bottom: 4px;
 }
@@ -1182,6 +1224,12 @@
 
     border: 1px solid var(--border-color);
     border-radius: 15px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .contact-form label {
@@ -1243,8 +1291,7 @@
     color: white;
     transform: translateY(-3px);
 
-    box-shadow:
-        0 8px 25px rgba(59, 130, 246, 0.25);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.25);
 }
 
 .contact-btn i {
